@@ -1,0 +1,40 @@
+{
+  "name": "@oucan/tools",
+  "description": "A library of LangChain tools and actions for AI agents, including Aave protocol integration",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xOucan/oucantools.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@langchain/core": "^0.1.0",
+    "@langchain/openai": "^0.0.14",
+    "decimal.js": "^10.4.0",
+    "viem": "^2.0.0",
+    "zod": "^3.22.0",
+    "reflect-metadata": "^0.2.0"
+  },
+  "keywords": [
+    "langchain",
+    "ai",
+    "agents",
+    "tools",
+    "aave",
+    "defi",
+    "blockchain",
+    "ethereum"
+  ]
+}
