@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.approve = void 0;
+exports.approve = approve;
 const viem_1 = require("viem");
 const ERC20_ABI = [
     {
@@ -41,4 +41,3 @@ async function approve(wallet, tokenAddress, spenderAddress, amount) {
         return `Error approving tokens: ${error}`;
     }
 }
-exports.approve = approve;

@@ -17,8 +17,8 @@ export declare enum AaveErrorCode {
 export declare class AaveError extends Error {
     code: AaveErrorCode;
     message: string;
-    details?: any;
-    constructor(code: AaveErrorCode, message: string, details?: any);
+    details?: any | undefined;
+    constructor(code: AaveErrorCode, message: string, details?: any | undefined);
     toString(): string;
 }
 export declare const createAaveError: (code: AaveErrorCode, details?: any) => AaveError;

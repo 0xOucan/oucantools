@@ -1,0 +1,9 @@
+src/
+tests/
+.eslintrc.json
+.prettierrc
+.prettierignore
+jest.config.cjs
+tsconfig.json
+*.test.ts
+*.md

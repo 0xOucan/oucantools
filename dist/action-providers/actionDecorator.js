@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.CreateAction = exports.ACTION_DECORATOR_KEY = void 0;
+exports.ACTION_DECORATOR_KEY = void 0;
+exports.CreateAction = CreateAction;
 const analytics_1 = require("../analytics");
 require("reflect-metadata");
 /**
@@ -64,7 +65,6 @@ function CreateAction(params) {
         return target;
     };
 }
-exports.CreateAction = CreateAction;
 /**
  * Validates the arguments of an action method
  *

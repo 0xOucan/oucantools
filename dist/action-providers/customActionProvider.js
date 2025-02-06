@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.customActionProvider = void 0;
+exports.customActionProvider = customActionProvider;
 function customActionProvider(config) {
     return {
         name: config.name,
@@ -11,4 +11,3 @@ function customActionProvider(config) {
         },
     };
 }
-exports.customActionProvider = customActionProvider;
